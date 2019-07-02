@@ -168,7 +168,7 @@ font-size: 14px;}
 .title_link,
 .title_link:any-link,
 .title_link:-webkit-any-link{
-  color: white
+  color: white;
   text-decoration: none;
 }
 
