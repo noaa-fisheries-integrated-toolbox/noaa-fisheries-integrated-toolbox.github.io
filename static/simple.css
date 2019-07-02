@@ -145,6 +145,7 @@ footer{
 
 .mylink{padding: 5px;
 font-size: 14px;}
+
 .mylink:any-link {
   color:black;
   height: fit-content;
@@ -162,6 +163,13 @@ font-size: 14px;}
 .contact:-webkit-any-link{
   color: #007078;
   text-decoration: underline;
+}
+
+.title_link,
+.title_link:any-link,
+.title_link:-webkit-any-link{
+  color: white
+  text-decoration: none;
 }
 
 /* selected li
