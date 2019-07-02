@@ -160,17 +160,22 @@ font-size: 14px;}
 
 .contact,
 .contact:any-link,
-.contact:-webkit-any-link{
+.contact:-webkit-any-link,
+.contact a:link{
   color: #007078;
   text-decoration: underline;
 }
 
 .title_link,
 .title_link:any-link,
-.title_link:-webkit-any-link{
+.title_link:-webkit-any-link,
+.title_link a:link,
+.title_link a:visited {
   color: white;
   text-decoration: none;
 }
+
+
 
 /* selected li
 
