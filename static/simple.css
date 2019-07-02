@@ -158,16 +158,24 @@ font-size: 14px;}
   height: fit-content;
 }
 
-a.contact,
+
 .contact,
 .contact:any-link,
 .contact:-webkit-any-link,
-.contact a:link{
+a.contact:link{
   color: #007078;
   text-decoration: underline;
 }
 
-a.title_link,
+a.contact{
+  color: #007078;
+  text-decoration: underline;
+}
+
+
+a.title_link:link,
+a.title_link:visited,
+a.title_link:-wekit-any-link,
 .title,
 .title:any-link,
 .title:-webkit-any-link,
@@ -178,6 +186,10 @@ a.title_link,
   text-decoration: none;
 }
 
+a.title_link{
+  color:white;
+  text-decoration: none;
+}
 
 
 /* selected li
