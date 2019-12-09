@@ -5,6 +5,7 @@
  font-family: Arial Narrow,Arial,sans-serif;
   color:#0055A4;
   margin:40px;
+  font-size: 16px;
 
 }
 .mywrap_center{
@@ -13,6 +14,10 @@
   margin:auto;
 
 
+}
+
+h1{
+  margin:0;
 }
 
 
@@ -29,12 +34,12 @@ li a{
 }
 
 .header_title {
-  min-width: 200px;
-  margin-right:auto;
-
+    min-width: 200px;
+    margin-right:auto;
+    font-weight: normal;
     color: #0055A4;
     font-family: Cambria,Georgia,serif;
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: left;
     padding: 5px;
 }
@@ -42,7 +47,7 @@ li a{
 .title {
     text-align: center;
     color: white;
-    font-size: 26px;
+    font-size: 1.625em;
     padding: 5px;
     font-family: Cambria,Georgia,serif;
 }
@@ -95,7 +100,7 @@ margin-bottom:20px;
 width: auto;
 height: auto;
 color: #000000;
-font-size: 16px;
+font-size: 1em;
 text-align: justify;
 padding: 20px 80px 20px 80px;
 
@@ -115,7 +120,7 @@ margin-bottom: auto;
 li {
   padding: 10px;
   /*line-height: 40px;*/
-  font-size: 24px;
+  font-size: 1.5em;
   color: white;
   list-style: none;
   width: auto;
@@ -132,7 +137,7 @@ img{
 footer{
   display: flex;
   flex-direction: row;
-  font-size: 12px;
+  font-size: 1em;
   color:black;
   padding-left:60px;
    padding-right:260px;
@@ -144,7 +149,7 @@ footer{
 }
 
 .mylink{padding: 5px;
-font-size: 14px;}
+font-size: 0.875em;}
 
 .mylink:any-link {
   color:black;
