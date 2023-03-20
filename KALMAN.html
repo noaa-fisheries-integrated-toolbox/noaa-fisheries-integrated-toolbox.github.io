@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NOAA Fisheries Kalman Filter</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
+   <link type="text/css" rel="stylesheet" href="./static/main.css" />
+
+</head>
+<body>
+    <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
+        <div class="mywrap">
+            <h2 class ="title">
+              Tool: Kalman Filter (KALMAN)
+            </h2>
+        </div>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/nmfs-fish-tools/KALMAN/releases/download/2.3/KalmanFilterV2-3.zip', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Website unavailable">
+                Website
+                </button>
+              
+
+
+              
+                <button class = "codelink nolink" title="Documentation unavailable">
+                Documentation
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Code Repository unavailable">
+                Code Repository
+                </button>
+              
+
+              
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/nmfs-fish-tools/KALMAN?color=%230093D0&include_prereleases&label=%20">
+              
+
+        </div>
+      <div class = "divider_thin">
+      </div>
+
+
+         
+        
+        <h3>Authors</h3>
+        <p>
+        Seaver, A.
+        </p>
+        
+
+        <h3>Description</h3>
+        <p>
+          The Kalman Filter is a recursive algorithm for updating linear projections of the system comprised by of an Observation Equation and a State Equation. <p>Observation Equation: y<sub>t</sub> = q<sub>t</sub>b<sub>t</sub> + v<sub>t</sub> </p><p> State Equation: b<sub>t</sub> = b<sub>t-1</sub> - w<sub>t</sub> </p><p>The user will supply a vector of observations, coefficients of variation on observation error and scale vector (q<sub>t</sub>).  The model will estimate two parameters: the state variable at time zero (b<sub>0</sub>) and the standard error on the state variable (s<sub>w</sub>). The model will return a vector of Filtered and Smoothed observations.</p>
+        </p>
+
+        
+        <h3>References</h3>
+            <ul>
+              
+              <li>Meinhold, R and Meinhold, N. 1983. Understanding the Kalman Filter. The American Statistician, Vol. 37, No. 2 (May, 1983), pp. 123-127</li>
+              
+            </ul>
+        
+
+
+        
+
+          
+
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://www.repostatus.org/badges/latest/inactive.svg">
+            <br>
+            
+          
+                  
+          <h3>
+          Keywords
+          </h3>
+          
+          <ul>
+          
+            <li>Time Series</li>
+          
+            <li>Guided User Interface</li>
+          
+          </ul>
+          
+
+      <div class = "divider"></div>
+
+        <footer >
+         <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
+
+    </div>
+
+
+</body>
+</html>
+
