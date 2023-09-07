@@ -11,7 +11,7 @@ gtag('config', 'G-M5G6F8Q09V');
 </script>
 <!--- We participate in the US government's analytics program. See the data at analytics.usa.gov -->
 <script  language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA&pua=UA-23806328-1&yt=true&exts=aac,arc,arj,asf,asx,bin,flv,gif,gzip,hqx,jar,mp2,msp,phps,qt,qutm,mxd,ram,sea,sit,tar,torrent,tsv,wav,wpd,xml,z" type="text/javascript"></script>
-    <title>FIT tool: FishLife</title>
+    <title>FIT tool: R package for phylogenetic structural equation models</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/main.css" />
 
@@ -38,12 +38,12 @@ gtag('config', 'G-M5G6F8Q09V');
     <div class = "divider"></div>
         <div class="mywrap">
             <h2 class ="title">
-              Tool: FishLife (FishLife)
+              Tool: R package for phylogenetic structural equation models (phylosem)
             </h2>
         </div>
         <div class="mywrap">
               
-              <button class = "codelink" title="link to online application" onclick=" window.open('https://james-thorson.shinyapps.io/FishLife/', '_blank'); return false;">
+                <button class = "codelink nolink" title="Online application unavailable">
                 Online Application
                 </button>
               
@@ -55,20 +55,20 @@ gtag('config', 'G-M5G6F8Q09V');
               
 
               
-                <button class = "codelink nolink" title="Website unavailable">
+               <button class = "codelink" title="link to website" onclick=" window.open('https://cran.r-project.org/web/packages/phylosem/index.html', '_blank'); return false;">
                 Website
                 </button>
               
 
 
               
-                <button class = "codelink nolink" title="Documentation unavailable">
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://github.com/James-Thorson-NOAA/phylosem/tree/main/vignettes', '_blank'); return false;">
                 Documentation
                 </button>
               
 
               
-               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/James-Thorson-NOAA/FishLife', '_blank'); return false;">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/James-Thorson-NOAA/phylosem/', '_blank'); return false;">
                 Code Repository
                 </button>
               
@@ -80,7 +80,7 @@ gtag('config', 'G-M5G6F8Q09V');
 
               
               
-              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/James-Thorson-NOAA/FishLife?color=%230093D0&include_prereleases&label=%20">
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/James-Thorson-NOAA/phylosem?color=%230093D0&include_prereleases&label=%20">
               
 
         </div>
@@ -92,24 +92,20 @@ gtag('config', 'G-M5G6F8Q09V');
         
         <h3>Authors</h3>
         <p>
-        James T Thorson Stephan B. Munch, Jason M. Cope, Jin Gao
+        James Thorson and Wouter van der Bijl
         </p>
         
 
         <h3>Description</h3>
         <p>
-          FishLife is an R Package that includes software, data, and associated results for a simple evolutionary model of life-history parameters for fishes.  The model approximates the co-evolution of life-history parameters representing adult growth, size, mortality, and maturity, as well as stock-recruit parameters representing maximum spawners per spawner, Beverton-Holt 'steepness', and variability in recruitment.  Given these adult and stock-recruit predictions, the model can then predict life-cycle parameters including generation time, intrinsic growth rate, and fishing mortality reference point proxies. The model includes predictions of these life-history parameters (and associated multivariate predictive uncertainty) for all described fishes, while shrinking the predicted value of each parameter towards available data for that species, data for related species, and predicted values given available data for other parameters for that species.
+          phylosem is a user-friendly and minimal R-package for phylogenetic structural equation models (PSEM).  PSEM generalizes a wide range of methods including phylogenetic generalized linear models, phylologenetic trait imputation, and structural equation models.  PSEM can be used to estimate continuous and categorical traits (e.g., demographic parameters, ecological role, mophometric measurements) for species based on evolutionary trade-offs and measurements for related taxa.  Package phylosem is intended as a simplified alternative to R-package FishLife. 
         </p>
 
         
         <h3>References</h3>
             <ul>
               
-              <li>Thorson, J.T., n.d. Predicting recruitment density dependence and intrinsic growth rate for all fishes worldwide using a data-integrated life-history model. Fish Fish. n/a. https://doi.org/10.1111/faf.12427</li>
-              
-              <li>Thorson, J.T., Munch, S.B., Cope, J.M., Gao, J., 2017. Predicting life history parameters for all fishes worldwide. Ecol. Appl. 27, 2262–2276. https://doi.org/10.1002/eap.1606</li>
-              
-              <li>Rudd, M.B., Thorson, J.T., Sagarese, S.R., 2019. Ensemble models for data-poor assessment: accounting for uncertainty in life-history information. ICES J. Mar. Sci. 76, 870–883. https://doi.org/10.1093/icesjms/fsz012</li>
+              <li>Thorson, J. T., Maureaud, A. A., Frelat, R., Mérigot, B., Bigman, J. S., Friedman, S. T., Palomares, M. L. D., Pinsky, M. L., Price, S. A., & Wainwright, P. (2023). Identifying direct and indirect associations among traits by merging phylogenetic comparative methods and structural equation models. Methods in Ecology and Evolution, 14(5), 1259–1275. https://doi.org/10.1111/2041-210X.14076</li>
               
             </ul>
         
@@ -121,9 +117,7 @@ gtag('config', 'G-M5G6F8Q09V');
         </h3>
             <ul id = "associated_tools">
             
-              <li><a href="https://github.com/merrillrudd/LIME">LIME</a></li>
-            
-              <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/phylosem">phylosem</a></li>
+              <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/FishLife">FishLife</a></li>
             
             </ul>
         
@@ -131,14 +125,11 @@ gtag('config', 'G-M5G6F8Q09V');
           
 
           
-          
           <h3>
-          Code Repository Badges
+          Citation
           </h3>
-            
-            <img class="software_badge" src="hhttps://img.shields.io/github/last-commit/James-Thorson-NOAA/FishLife.svg?style=plastic" alt="A software badge showing the latest commit to the repository.">
-            <br>
-            
+            <p>Thorson, J. T., & van der Bijl, W. (In review). phylosem: A fast and simple R package for phylogenetic inference and trait imputation using phylogenetic structural equation models. Journal of Evolutionary Biology.</p>
+          
           
                   
           <h3>
@@ -147,15 +138,11 @@ gtag('config', 'G-M5G6F8Q09V');
           
           <ul>
           
+            <li>Natural Mortality Model</li>
+          
             <li>R Package</li>
           
-            <li>Fish and Fisheries</li>
-          
-            <li>Fish Biology</li>
-          
-            <li>Web App</li>
-          
-            <li>Shiny</li>
+            <li>TMB</li>
           
           </ul>
           
