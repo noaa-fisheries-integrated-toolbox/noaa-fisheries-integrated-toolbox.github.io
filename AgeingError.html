@@ -11,7 +11,7 @@ gtag('config', 'G-M5G6F8Q09V');
 </script>
 <!--- We participate in the US government's analytics program. See the data at analytics.usa.gov -->
 <script  language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA&pua=UA-23806328-1&yt=true&exts=aac,arc,arj,asf,asx,bin,flv,gif,gzip,hqx,jar,mp2,msp,phps,qt,qutm,mxd,ram,sea,sit,tar,torrent,tsv,wav,wpd,xml,z" type="text/javascript"></script>
-    <title>FIT tool: Ensemble tool for predictions from Species Distribution Models</title>
+    <title>FIT tool: Ageing Error</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/main.css" />
 
@@ -39,13 +39,13 @@ gtag('config', 'G-M5G6F8Q09V');
         <div class="mywrap">
             
             <h2 class ="title">
-              Tool: Ensemble tool for predictions from Species Distribution Models (eSDM)
+              Tool: Ageing Error (AgeingError)
             </h2>
         </div>
         <br>
         <div class="mywrap">
               
-              <button class = "codelink" title="link to online application" onclick=" window.open('https://connect.fisheries.noaa.gov/eSDM/', '_blank'); return false;">
+                <button class = "codelink nolink" title="Online application unavailable">
                 Online Application
                 </button>
               
@@ -57,20 +57,20 @@ gtag('config', 'G-M5G6F8Q09V');
               
 
               
-               <button class = "codelink" title="link to website" onclick=" window.open('https://swfsc.github.io/eSDM/', '_blank'); return false;">
+               <button class = "codelink" title="link to website" onclick=" window.open('https://pfmc-assessments.github.io/AgeingError/', '_blank'); return false;">
                 Website
                 </button>
               
 
 
               
-               <button class = "codelink" title="link to documentation" onclick=" window.open('https://swfsc.github.io/eSDM/reference/index.html', '_blank'); return false;">
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://pfmc-assessments.github.io/AgeingError/articles/getting_started.html', '_blank'); return false;">
                 Documentation
                 </button>
               
 
               
-               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/swfsc/eSDM/', '_blank'); return false;">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/pfmc-assessments/AgeingError', '_blank'); return false;">
                 Code Repository
                 </button>
               
@@ -78,15 +78,8 @@ gtag('config', 'G-M5G6F8Q09V');
 
               <!-- Stop using pdf download because the description is too general to
               work well for folks using screen readers. -->
-              <!-- 
-              <a class = "pdfIcon" title="download pdf"
-                href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13283" download>
-              </a>
-               -->
+              <!--  -->
 
-              
-              
-              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/smwoodman/eSDM?color=%230093D0&include_prereleases&label=%20">
               
 
         </div>
@@ -98,19 +91,39 @@ gtag('config', 'G-M5G6F8Q09V');
         
         <h3>Authors</h3>
         <p>
-        Woodman et al.
+        Andre E. Punt, Kelli F. Johnson, James T. Thorson, Ian G. Taylor, Paul Burch
         </p>
         
 
+        
+        <h3>Contributors</h3>
+        <p>
+        Ian J. Stewart, Melissa A. Haltuch
+        </p>
         
 
         <h3>Description</h3>
         <p>
-          eSDM is an R package designed to allow users to create ensembles of predictions from species distribution models (SDMs) made at different spatial scales or with different prediction units. Included in the package is the eSDM GUI, an R Shiny tool that provides the user with a graphical user interface that they can use to import, overlay, and create ensembles of SDM predictions.
+          The AgeingError package estimates uncertainty in age estimates double-reads of hard structures (e.g., otoliths) based on the method of Punt et al. (2008) that account for both ageing bias and imprecision. The output can be used in Stock Synthesis or other assessment platforms that incorporate ageing error.
         </p>
 
         
+        <h3>References</h3>
+            <ul>
+              
+              <li>Punt, A. E., Smith, D. C., KrusicGolub, K., & Robertson, S. (2008). Quantifying age-reading error for use in fisheries stock assessments, with application to species in Australia’s southern and eastern scalefish and shark fishery. Canadian Journal of Fisheries and Aquatic Sciences, 65(9), 1991–2005. <a href="https://doi.org/10.1139/f08-111">https://doi.org/10.1139/f08-111</a>
+</li>
+              
+            </ul>
+        
 
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          In R, install the latest precompiled version from R universe:<br><br><code>install.packages("AgeingError", repos = c("https://noaa-fisheries-integrated-toolbox.r-universe.dev", "https://cloud.r-project.org"))</code><br><br>Or in R, install from GitHub:<br><br><code># using {remotes}<br>remotes::install_github("pfmc-assessments/AgeingError")<br># using {pak}<br>pak::pak("pfmc-assessments/AgeingError")<br></code>
+        </p>
         
 
         
@@ -121,17 +134,8 @@ gtag('config', 'G-M5G6F8Q09V');
           <h3>
           Citation
           </h3>
-            <p>Woodman, S. M., Forney, K. A., Becker, E. A., DeAngelis, M. L., Hazen, E. L., Palacios, D. M., & Redfern, J. V. (2019). <scp>esdm</scp>: A tool for creating and exploring ensembles of predictions from species distribution and abundance models. Methods in Ecology and Evolution, 10(11), 1923–1933. <a href="https://doi.org/10.1111/2041-210x.13283">https://doi.org/10.1111/2041-210x.13283</a>
-</p>
+            <p>Users should cite both the R package and Punt et al. 2008, both described at <a href="https://pfmc-assessments.github.io/AgeingError/authors.html#citation">https://pfmc-assessments.github.io/AgeingError/authors.html#citation</a></p>
           
-          
-          <h3>
-          Code Repository Badges
-          </h3>
-            
-            <img class="software_badge" src="https://www.repostatus.org/badges/latest/active.svg" alt="A software badge showing that the repository is active.">
-            <br>
-            
           
                   
           <h3>
@@ -140,13 +144,13 @@ gtag('config', 'G-M5G6F8Q09V');
           
           <ul>
           
-            <li>Web App</li>
+            <li>Data Exploration</li>
           
-            <li>Shiny</li>
-          
-            <li>Ensemble Modeling</li>
+            <li>Fisheries</li>
           
             <li>R Package</li>
+          
+            <li>TMB</li>
           
           </ul>
           
