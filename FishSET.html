@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M5G6F8Q09V"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-M5G6F8Q09V');
+</script>
+<!--- We participate in the US government's analytics program. See the data at analytics.usa.gov -->
+<script  language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA&pua=UA-23806328-1&yt=true&exts=aac,arc,arj,asf,asx,bin,flv,gif,gzip,hqx,jar,mp2,msp,phps,qt,qutm,mxd,ram,sea,sit,tar,torrent,tsv,wav,wpd,xml,z" type="text/javascript"></script>
+    <title>FIT tool: Spatial Economics Toolbox for Fisheries</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
+   <link type="text/css" rel="stylesheet" href="./static/main.css" />
+
+</head>
+<body>
+    <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class ="mywrap_head">
+      <button class="dropbtn" onclick="location.href='/';" value="FIT homepage" >FIT Homepage</button>
+        <div class="dropdown">
+          <button class="dropbtn" value="Resources" >Resources</button>
+            <div class="dropdown-content">
+              <button class="menudropbtn" onclick="location.href='/resources';" value="Resources Home" >Resources Home</button>
+              <button class="menudropbtn" onclick="location.href='/resources/categories';" value="Browse by category" >Browse By Category</button>
+              <button class="menudropbtn" onclick="location.href='/resources/tags';" value="Browse by tag" >Browse By Tag</button>
+            </div>
+        </div>
+      <button class="dropbtn" onclick="location.href='/resources/about';" value="About" >About</button>
+       <button class="dropbtn" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact" >Contact</button>
+    </div>
+    <div class = "divider"></div>
+        <div class="mywrap">
+            
+              <img src="https://github.com/noaa-nwfsc/FishSET/blob/master/docs/fishset_logo.png?raw=true" alt = "tool logo" height = "75">
+            
+            <h2 class ="title">
+              Tool: Spatial Economics Toolbox for Fisheries (FishSET)
+            </h2>
+        </div>
+        <br>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/noaa-nwfsc/FishSET/releases/latest', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to website" onclick=" window.open('https://noaa-nwfsc.github.io/FishSET/', '_blank'); return false;">
+                Website
+                </button>
+              
+
+
+              
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://noaa-nwfsc.github.io/FishSET/articles/FishSET_User_Manual.html', '_blank'); return false;">
+                Documentation
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/noaa-nwfsc/FishSET', '_blank'); return false;">
+                Code Repository
+                </button>
+              
+
+
+              <!-- Stop using pdf download because the description is too general to
+              work well for folks using screen readers. -->
+              <!--  -->
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/noaa-nwfsc/FishSET?color=%230093D0&include_prereleases&label=%20">
+              
+
+        </div>
+      <div class = "divider_thin">
+      </div>
+
+
+         
+        
+        <h3>Authors</h3>
+        <p>
+        Lisa Pfeiffer, Paul Carvalho, Anna Abelman, Min-Yang Lee, Alan Haynie
+        </p>
+        
+
+        
+        <h3>Contributors</h3>
+        <p>
+        Corinne Bassin, Allen Chen, Rita Curtis, Melanie Harsch, Adam Hayes, Bryce McManus, Doug Lipton, Jordan Watson
+        </p>
+        
+
+        <h3>Description</h3>
+        <p>
+          The Spatial Economics Toolbox for Fisheries (FishSET) is a set of tools developed as an R package for organizing and visualizing data; developing, improving and disseminating modeling best practices; and simulating policy scenarios to explore the welfare consequences of management decisions.
+        </p>
+
+        
+
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          <p>In R, install the 'devtools' R package, then run the following code (enter a blank line when prompted to update packages):</p><p><code>options (download.file.method = "wininet")</code><br><code>devtools::install_github("noaa-nwfsc/FishSET")</code></p>
+        </p>
+        
+
+        
+
+          
+
+          
+          <h3>
+          Citation
+          </h3>
+            <p>Pfeiffer, L., Carvalho, P., Abelman, A., Lee, MY., & Haynie, A. (2024). FishSET: Spatial Economics Toolbox for Fisheries. R Package Version 1.0.0.  https://github.com/noaa-nwfsc/FishSET.</p>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://github.com/noaa-nwfsc/FishSET/actions/workflows/R-CMD-check.yaml/badge.svg" alt="A software badge showing the staus of the R-CMD-check GitHub action workflow">
+            <br>
+            
+            <img class="software_badge" src="https://github.com/noaa-nwfsc/FishSET/actions/workflows/secretScan.yml/badge.svg" alt="A software badge showing the status of the secretScan GitHub Action workflow">
+            <br>
+            
+            <img class="software_badge" src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="A software badge showing that the lifecyle stage of the software is experimental.">
+            <br>
+            
+          
+                  
+          <h3>
+          Keywords
+          </h3>
+          
+          <ul>
+          
+            <li>Data Visualization</li>
+          
+            <li>Economics</li>
+          
+            <li>R Package</li>
+          
+            <li>Shiny</li>
+          
+            <li>Spatial Model</li>
+          
+          </ul>
+          
+
+          <div class = "divider"></div>
+          <a class = "mylink" href = "https://noaa-fisheries-integrated-toolbox.github.io/site-index">Site Index</a>
+          <div class = "divider"></div>
+        <footer >
+         <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <!-- <div class ="attribution">Icons by icons8 https://icons8.com/</div> -->
+
+    </div>
+
+
+</body>
+</html>
+
