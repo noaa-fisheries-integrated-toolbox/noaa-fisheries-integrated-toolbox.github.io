@@ -1,5 +1,6 @@
 # noaa-fisheries-integrated-toolbox.github.io
-NOAA FIT Portal
+
+This hosts the redirects to the new FIT URLS - the [FIT website](https://nmfs-ost.github.io/noaa-fit) and the [FIT resources](https://nmfs-ost.github.io/noaa-fit-resources/).
 
 See [gh-pages branch](https://github.com/noaa-fisheries-integrated-toolbox/noaa-fisheries-integrated-toolbox.github.io/tree/gh-pages) for the hosted version.
 
